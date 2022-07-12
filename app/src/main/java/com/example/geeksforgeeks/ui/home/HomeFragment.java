@@ -27,8 +27,9 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         WebView webView=root.findViewById(R.id.web_view_home);
-        webView.loadUrl("https://www.geeksforgeeks.org/");
+        webView.loadUrl("https://campmigdal.zenfolio.com/recent.html");
         webView.setWebViewClient(new WebViewController());
+        webView.getSettings().setJavaScriptEnabled(true); webView.getSettings().setLoadWithOverviewMode(true); webView.getSettings().setUseWideViewPort(true); webView.getSettings().setSupportZoom(true); webView.getSettings().setBuiltInZoomControls(true); webView.getSettings().setDisplayZoomControls(false); webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY); webView.setScrollbarFadingEnabled(false);
         return root;
     }
 }

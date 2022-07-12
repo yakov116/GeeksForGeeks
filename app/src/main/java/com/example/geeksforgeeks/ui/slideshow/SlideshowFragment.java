@@ -27,7 +27,7 @@ public class SlideshowFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
 
         WebView webView=root.findViewById(R.id.web_view_contribute);
-        webView.loadUrl("https://www.geeksforgeeks.org/contribute/");
+        webView.loadUrl("https://campmigdal.zenfolio.com/recent.html");
         webView.setWebViewClient(new WebViewController());
         return root;
     }
